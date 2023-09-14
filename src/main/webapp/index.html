@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voting</title>
+</head>
+<body>
+<form action="http://localhost:8081/VotingApp_war/voting" method="post">
+  <div class="best-author">
+    <label>Ваш любимый исполнитель:</label><br>
+    <input type="radio" id="author1" name="author" value="Скриптонит">
+    <label for="author1">Скриптонит</label><br>
+    <input type="radio" id="author2" name="author" value="Nothing But Thieves">
+    <label for="author2">Nothing But Thieves</label><br>
+    <input type="radio" id="author3" name="author" value="Wellmess">
+    <label for="author3">Wellmess</label><br>
+    <input type="radio" id="author4" name="author" value="Drake">
+    <label for="author4">Drake</label><br>
+  </div>
+
+  <div class="favourite-genres">
+
+    <label>Ваши любимые жанры(выбрать 3-5):</label><br>
+    <input type="checkbox" id="checkbox1" name="checkboxGroup[]" value="Поп-музыка">
+    <label for="checkbox1">Поп-музыка</label><br>
+    <input type="checkbox" id="checkbox2" name="checkboxGroup[]" value="Классическая музыка">
+    <label for="checkbox2">Классическая музыка</label><br>
+    <input type="checkbox" id="checkbox3" name="checkboxGroup[]" value="Рок">
+    <label for="checkbox3">Рок</label><br>
+    <input type="checkbox" id="checkbox4" name="checkboxGroup[]" value="Блюз">
+    <label for="checkbox4">Блюз</label><br>
+    <input type="checkbox" id="checkbox5" name="checkboxGroup[]" value="Джаз">
+    <label for="checkbox5">Джаз</label><br>
+    <input type="checkbox" id="checkbox6" name="checkboxGroup[]" value="Шансон">
+    <label for="checkbox6">Шансон</label><br>
+    <input type="checkbox" id="checkbox7" name="checkboxGroup[]" value="Хип-хоп">
+    <label for="checkbox7">Хип-хоп</label><br>
+    <input type="checkbox" id="checkbox8" name="checkboxGroup[]" value="Метал">
+    <label for="checkbox8">Метал</label><br>
+    <input type="checkbox" id="checkbox9" name="checkboxGroup[]" value="Хауз">
+    <label for="checkbox9">Хауз</label><br>
+    <input type="checkbox" id="checkbox10" name="checkboxGroup[]" value="Р'н'Б">
+    <label for="checkbox10">Р'н'Б</label><br>
+  </div>
+
+  <div class="text">
+    <label>Напишите что-нибудь про себя:</label><br>
+    <textarea id="myTextarea" name="myTextarea" rows="4" cols="50" placeholder="Писать здесь..."></textarea>
+  </div>
+
+  <div class="button">
+    <button type="submit" id="myButton">Нажимать сюда</button>
+  </div>
+
+</form>
+</body>
+</html>
